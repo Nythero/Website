@@ -74,24 +74,6 @@ nav * {
   align-items: center;
 }
 
-#theme button {
-  cursor: pointer;
-  display: flex;
-  height: 48px;
-  width: 48px;
-  background-size: 48px 48px;
-  border: none !important;
-  background-color: inherit;
-}
-
-body[dark="false"] #theme button {
-  background-image : url("../img/sun.png");
-}
-
-body[dark="true"] #theme button {
-  background-image : url("../img/moon2.png");
-}
-
 #content {
   width: 75vw;
   text-align: center;

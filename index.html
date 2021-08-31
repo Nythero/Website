@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agustin Gonzalez - Developer</title>
         <link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/themeButtonStyle.css">
 	<script>
 	  function switchMode() {
             let body = document.querySelector("body");
@@ -41,8 +42,13 @@
           </a>
         </nav>
 	</div>
-	<div id="theme">
-          <button onclick="switchMode()">
+	<div id="theme">  
+          <svg viewBox="0 0 128 128" onclick="switchMode()">
+             <circle id="astro" cx="64" cy="64" r="32"/>
+             <circle id="shadow" cx="96" cy="64" r="32" />
+	     <circle id="eraser" cx="64" cy="64" r="64"/>
+             <circle id="corona" cx="64" cy="64" r="48"/>
+          </svg>
 	</div>
       </header>
       <div id="content">
@@ -60,7 +66,7 @@
 	  </h2>
 	  <div class="experiences">
 	    <div class="experienceImage">
-              <img src="./img/unq2.png" alt="Foto de la Universidad Nacional De Quilmes">
+              <img src="./img/unq.png" alt="Foto de la Universidad Nacional De Quilmes">
 	    </div>
 	    <div class="experienceText">
                <h3>

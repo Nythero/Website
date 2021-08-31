@@ -1,0 +1,83 @@
+#theme svg {
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  width: 48px;
+}
+
+/*
+ * Base button theme
+ */
+
+#theme svg #astro {
+  fill: #ffffff;
+  stroke-opacity: 0;
+  stroke: #000000;
+}
+
+#theme svg #shadow {
+  fill: #4d4d4d;
+  stroke-opacity: 0;
+  stroke: #4d4d4d;
+  transition: transform 1s;
+}
+
+#theme svg #eraser{
+  fill: #000000;
+  fill-opacity: 0;
+  stroke: #000000;
+  stroke-width: 63;
+}
+
+#theme svg #corona {
+  fill: #ffffff;
+  fill-opacity: 0;
+  stroke: #000000;
+  stroke-width: 32;
+}
+
+/*
+ * Base button theme on hover
+ */
+
+body #theme svg:hover #shadow {
+  transform: translate(25%, 0px);
+  transition: transform 1s;
+}
+
+/*
+ * Light button theme
+ */
+
+body[dark="false"] #theme svg #astro {
+  stroke-opacity: 1;
+  stroke-width: 3;
+}
+
+body[dark="false"] #theme svg #shadow {
+  transform: translate(25%, 0px);
+  transition: transform 1s;
+}
+
+body[dark="false"] #theme svg #eraser {
+  stroke: #ffffff;
+}
+
+body[dark="false"] #theme svg #corona {
+  stroke-dasharray: 3 35;
+  transition: stroke-opacity 0.5s linear 1s;
+}
+
+/*
+ * Light button theme on hover
+ */
+
+body[dark="false"] #theme svg:hover #shadow {
+  transform: translate(0px, 0px);
+  transition: transform 1s linear 1s;
+}
+
+body[dark="false"] #theme svg:hover #corona {
+  stroke-opacity: 0;
+  transition: stroke-opacity 0.5s;
+}
