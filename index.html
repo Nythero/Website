@@ -9,17 +9,16 @@
 	<script>
 	  function switchMode() {
             let body = document.querySelector("body");
-	    if (body.getAttribute("dark") == "true") {
-              body.setAttribute("dark", "false");
+	    if (body.getAttribute("data-dark") == "true") {
+              body.setAttribute("data-dark", "false");
 	    }
 	    else {
-              body.setAttribute("dark", "true");
+              body.setAttribute("data-dark", "true");
 	    }
-	    console.log(body.getAttribute("dark"));
 	  }
 	</script>
     </head>
-    <body dark="true"> 
+    <body data-dark="true"> 
       <header>
         <div id="logo">
           <a href="#">
@@ -112,9 +111,9 @@
 	    agustin-ag@live.com
 	  </p>
 	  <div id="links">
-	    <a id="linkedinLink" href="https://github.com/Nythero" alt="Linkedin Logo">
+	    <a id="linkedinLink" href="https://github.com/Nythero">
 	    </a>
-	    <a id="githubLink" href="https://www.linkedin.com/in/agustinag/" alt="GitHub Logo">
+	    <a id="githubLink" href="https://www.linkedin.com/in/agustinag/">
 	    </a>
 	  </div>
         </footer>

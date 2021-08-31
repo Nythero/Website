@@ -49,21 +49,21 @@ body #theme svg:hover #shadow {
  * Light button theme
  */
 
-body[dark="false"] #theme svg #astro {
+body[data-dark="false"] #theme svg #astro {
   stroke-opacity: 1;
   stroke-width: 3;
 }
 
-body[dark="false"] #theme svg #shadow {
+body[data-dark="false"] #theme svg #shadow {
   transform: translate(25%, 0px);
   transition: transform 1s;
 }
 
-body[dark="false"] #theme svg #eraser {
+body[data-dark="false"] #theme svg #eraser {
   stroke: #ffffff;
 }
 
-body[dark="false"] #theme svg #corona {
+body[data-dark="false"] #theme svg #corona {
   stroke-dasharray: 3 35;
   transition: stroke-opacity 0.5s linear 1s;
 }
@@ -72,12 +72,12 @@ body[dark="false"] #theme svg #corona {
  * Light button theme on hover
  */
 
-body[dark="false"] #theme svg:hover #shadow {
+body[data-dark="false"] #theme svg:hover #shadow {
   transform: translate(0px, 0px);
   transition: transform 1s linear 1s;
 }
 
-body[dark="false"] #theme svg:hover #corona {
+body[data-dark="false"] #theme svg:hover #corona {
   stroke-opacity: 0;
   transition: stroke-opacity 0.5s;
 }
