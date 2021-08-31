@@ -29,6 +29,31 @@ a {
   text-decoration: inherit;
 }
 
+header a {
+  position: relative;
+}
+
+header a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  background: #ffffff;
+  height: 1px;
+  width: 0px;
+  transition: width 0.25s;
+}
+
+header a:hover:after {
+  width: 100%;
+}
+
+header nav a {
+  display: flex;
+  height: 50%;
+  align-items: center;
+}
+
 body {
   display: flex;
   justify-content: center;
