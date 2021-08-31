@@ -1,0 +1,145 @@
+body[dark="true"] {
+  background-color: #000;
+  color: #fff;
+}
+
+body[dark="false"] {
+  background-color: #fff;
+  color: #000;
+}
+
+p {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 37px;
+}
+
+* {
+  font-family: "Consolas", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  width: 75vw;
+  top: 0;
+  opacity: 1;
+  display: inline-flex;
+  background-color: inherit;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo a {
+  font-size: 2em;
+}
+
+#nav-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav * {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+#theme {
+  display: flex;
+  align-items: center;
+}
+
+#theme button {
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  width: 48px;
+  background-size: 48px 48px;
+  border: none !important;
+  background-color: inherit;
+}
+
+body[dark="false"] #theme button {
+  background-image : url("../img/sun.png");
+}
+
+body[dark="true"] #theme button {
+  background-image : url("../img/moon2.png");
+}
+
+#content {
+  width: 75vw;
+  text-align: center;
+}
+
+.contentSection {
+  padding-top: 60px;
+}
+
+.experiences {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiences img {
+  margin-right: 2vw;
+  border-radius: 50%;
+}
+
+#linkedinLink {
+  background-image: url("file:///C:/Users/Nythero/Projects/website/img/LI-In-Bug.png");
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  padding: 60px;
+}
+
+footer #links {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  display: flex;
+  height: 48px;
+  width: 48px;
+  background-size: 48px 48px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+body[dark="true"] #githubLink {
+  background-image: url("../img/GitHub-Mark-Light-120px-plus.png");
+}
+
+body[dark="false"] #githubLink {
+  background-image: url("../img/GitHub-Mark-120px-plus.png");
+}

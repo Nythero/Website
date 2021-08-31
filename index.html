@@ -4,43 +4,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agustin Gonzalez - Developer</title>
+        <link rel="stylesheet" href="./css/style.css">
+	<script>
+	  function switchMode() {
+            let body = document.querySelector("body");
+	    if (body.getAttribute("dark") == "true") {
+              body.setAttribute("dark", "false");
+	    }
+	    else {
+              body.setAttribute("dark", "true");
+	    }
+	    console.log(body.getAttribute("dark"));
+	  }
+	</script>
     </head>
-    <body> 
-      <div id="nav">
-	<div id="logo">
-	  <a>
-	    AG
-	  </a>
+    <body dark="true"> 
+      <header>
+        <div id="logo">
+          <a href="#">
+            AG
+          </a>
+        </div>
+	<div id="nav-wrapper">
+        <nav>
+          <a href="#experience">
+            Experience
+          </a>
+          <a href="#projects">
+            Projects
+          </a>
+          <a href="#resume">
+            Resume
+          </a>
+          <a href="#questions">
+            About
+          </a>
+        </nav>
 	</div>
-	<ul>
-  	  <li>
-	    Experience
-  	  </li>
-  	  <li>
-	    Projects
-  	  </li>
-  	  <li>
-	    Questions
-  	  </li>
-  	  <li>
-	    Contact
-  	  </li>
-	</ul>
-      </div>
+	<div id="theme">
+          <button onclick="switchMode()">
+	</div>
+      </header>
       <div id="content">
-        <div id="salutation">
+        <div class="contentSection" id="salutation">
 	  <h1>
 	    Hi, I'm Agust&iacute;n Gonz&aacute;lez. 
 	  </h1>
-	  A developer that likes simple solutions and the best user experience.
+	  <p>
+	    An Earthian developer with a focus on simple solutions and providing the best user experience.
+	  </p>
         </div>
-        <div id="experience">
+        <div class="contentSection" id="experience">
 	  <h2>
-	    My Professional Life
+	    Formation and Experience
 	  </h2>
-	  <div id="unq">
+	  <div class="experiences">
 	    <div class="experienceImage">
-              <img src="./img/unq.jpg" alt="Foto de la Universidad Nacional De Quilmes">
+              <img src="./img/unq2.png" alt="Foto de la Universidad Nacional De Quilmes">
 	    </div>
 	    <div class="experienceText">
                <h3>
@@ -55,7 +75,7 @@
 	    </div>
 	  </div>
         </div>
-        <div id="projects">
+        <div class="contentSection" id="projects">
   	  <h2>
 	    My Projects
 	  </h2>
@@ -63,36 +83,28 @@
 	    Nothing right now.
 	  </div>
         </div>
-	<div id="resume">
+	<div class="contentSection" id="resume">
 	  <a href="./pdf/resume.pdf">
 	    <h2>
-	      My Resume
+	      Resume
 	    </h2>
 	  </a>
 	</div>
-        <div id="questions">
+        <div class="contentSection" id="questions">
   	  <h2>
-	    Questions that nobody asked.
+	    About
 	  </h2>
-	  <ul>
-	    <li class="question">
-	      
-	    </li>
-	  </ul>
         </div>
         <footer>
 	  <p id="email">
-	    Agustin-ag@live.com
+	    agustin-ag@live.com
 	  </p>
-	  <a href="https://github.com/Nythero" alt="Linkedin Logo">
-	    <img src="./img/GitHub-Mark-120px-plus.png">
-	  </a>
-	  <a href="https://www.linkedin.com/in/agustinag/" alt="Linkedin Logo">
-	    <img src="./img/LI-In-Bug.png">
-	  </a>
-	  <p>
-  	    Made in Argentina.
-	  </p>
+	  <div id="links">
+	    <a id="linkedinLink" href="https://github.com/Nythero" alt="Linkedin Logo">
+	    </a>
+	    <a id="githubLink" href="https://www.linkedin.com/in/agustinag/" alt="GitHub Logo">
+	    </a>
+	  </div>
         </footer>
       </div>
     </body> 
