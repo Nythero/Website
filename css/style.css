@@ -65,6 +65,7 @@ body {
 
 header {
   position: fixed;
+  height: 60px;
   width: 75vw;
   top: 0;
   opacity: 1;
@@ -88,9 +89,9 @@ header {
 
 nav {
   display: flex;
-  height: 60px;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 nav * {
@@ -166,4 +167,26 @@ body[data-dark="true"] #githubLink {
 
 body[data-dark="false"] #githubLink {
   background-image: url("../img/GitHub-Mark-120px-plus.png");
+}
+
+@media screen and (max-width: 800px) {
+
+  header {
+    width: 100vw;
+    justify-content: center;
+  }	
+
+  header #logo a {
+    font-size: 3em;
+  }
+
+  header #nav-wrapper {
+    display: none;    
+  }
+
+  header #theme {
+    position: absolute;
+    right: 12.5vw;
+    height: 100%;
+  }
 }
