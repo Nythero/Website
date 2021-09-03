@@ -128,12 +128,12 @@ body[data-dark="false"] .contentSection a:hover {
   color: #333333ff;
   transition: color 0.25s;}
 
-.contentSection a:hover {
+#content a:hover {
   color: #b3b3b3ff;
   transition: color 0.25s;
 }
 
-.contentSection a {
+#content a {
   transition: color 0.25s;
 }
 
@@ -149,14 +149,19 @@ body[data-dark="false"] .contentSection a:hover {
   border-radius: 50%;
 }
 
-#linkedinLink {
+#links #linkedinLink {
   background-image: url("../img/LI-In-Bug.png");
+  background-size: 55px 48px;
 }
 
 footer {
   display: grid;
   justify-content: center;
-  padding: 60px 0;
+  padding-bottom: 60px;
+}
+
+footer p {
+  margin-bottom: revert;
 }
 
 footer #links {
@@ -164,7 +169,7 @@ footer #links {
   justify-content: center;
 }
 
-footer a {
+#links a {
   display: flex;
   height: 48px;
   width: 48px;
